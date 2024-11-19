@@ -1,6 +1,4 @@
 # seonamhae.github.io
-<<<<<<< HEAD
-=======
 
 <h1> h1 world </h1>
 
