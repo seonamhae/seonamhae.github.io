@@ -20,7 +20,7 @@
 		
 	    <!-- Script for Load Component -->
     	<script>
-        	// 공통 함수 정의
+        	// Define Common Function 
 	        function loadComponent(file, elementId) {
 	            fetch(file)
 	                .then(response => response.text())
@@ -30,8 +30,8 @@
 	                .catch(error => console.error('Error loading component:', error));
 	        }
 	
-	        loadComponent('header.html', 'header-container');
-	        loadComponent('footer.html', 'footer-container');
+	        loadComponent('common/header.html', 'header-container');
+	        loadComponent('common/footer.html', 'footer-container');
 	    </script>
 	</body>
 </html>
