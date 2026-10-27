@@ -1,1 +1,40 @@
-write blog
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>this is title</title>
+		<link rel="style" href="/common/style.css">
+	</head>
+	<body>
+		<!-- Place Header -->
+		<div id="header-container"></div>
+
+		<main>
+			<h1> Page : Blog </h1>
+		</main>
+		
+		<h2>this is Blog</h2>
+    <p>write your logs</p>
+
+    
+		
+		<!-- Place Footer -->
+		<div id="footer-container"></div>
+		
+	    <!-- Script for Load Component -->
+    	<script>
+        	// Define Common Function 
+	        function loadComponent(file, elementId) {
+	            fetch(file)
+	                .then(response => response.text())
+	             .then(data => {
+	                    document.getElementById(elementId).innerHTML = data;
+	                })
+	                .catch(error => console.error('Error loading component:', error));
+	        }
+	
+	        loadComponent('/common/header.html', 'header-container');
+	        loadComponent('/common/footer.html', 'footer-container');
+	    </script>
+	</body>
+</html>
