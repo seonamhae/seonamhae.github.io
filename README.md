@@ -1,5 +1,4 @@
 # seonamhae.github.io
 
-<h1> h1 world </h1>
-
-# md1 new world
+<h1> Hi </h1>
+<a href="https://seonamhae.github.io/">Seonamhae Blog</a>
