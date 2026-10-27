@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>this is title</title>
-		<link rel="style" href="style.css">
+		<link rel="style" href="/common/style.css">
 	</head>
 	<body>
 		<!-- Place Header -->
@@ -14,6 +14,13 @@
 		</main>
 		
 		<h2>this is body</h2>
+		
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/pages/resume.html">Resume</a></li>
+            <li><a href="/pages/blog.html">Blog</a></li>
+        </ul>
+
 		
 		<!-- Place Footer -->
 		<div id="footer-container"></div>
@@ -30,8 +37,8 @@
 	                .catch(error => console.error('Error loading component:', error));
 	        }
 	
-	        loadComponent('common/header.html', 'header-container');
-	        loadComponent('common/footer.html', 'footer-container');
+	        loadComponent('/common/header.html', 'header-container');
+	        loadComponent('/common/footer.html', 'footer-container');
 	    </script>
 	</body>
 </html>
